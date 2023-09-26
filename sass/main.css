@@ -1,0 +1,151 @@
+.b-page__head-line {
+  display: grid;
+  grid-template-rows: repeat(2);
+  align-items: start;
+  background: url("/assets/images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 801px;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.b-head {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  grid-template-rows: repeat(1, 20%);
+  justify-content: space-around;
+  align-content: center;
+}
+
+.b-head__media {
+  display: grid;
+  grid-template-columns: repeat(5, 10%);
+  justify-content: stretch;
+  gap: 1em;
+}
+
+.b-head__icon {
+  background-image: url("/assets/icons/icon_rect.svg");
+}
+
+.b-head__button {
+  justify-self: right;
+  align-content: center;
+}
+
+.button {
+  background: none;
+  border: solid white;
+  border-radius: 0.3em;
+  color: white;
+  padding: 0.3em 1.2em;
+  font-family: "Futurademic Regular";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.b-head__content {
+  display: grid;
+  grid-template-columns: 35% 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-download {
+  display: grid;
+  grid-template-rows: repeat(4);
+  width: 250px;
+  color: white;
+  gap: 5px;
+  justify-content: center;
+}
+
+.item__popup {
+  justify-self: end;
+  height: 30px;
+}
+
+.popup__text {
+  font-family: "Futurabookc Regular";
+  font-size: 10px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 3.7em;
+  left: 0.6em;
+  z-index: 3333;
+}
+
+.popup__img {
+  width: 125px;
+}
+
+.item__download {
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Futurabookc Regular";
+  align-self: center;
+}
+
+.download__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item__download:before,
+.item__download:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 0.2px;
+  background-color: white;
+  position: relative;
+}
+
+.item__download:before {
+  margin-left: -100%;
+  left: -14px;
+}
+
+.item__download:after {
+  margin-right: -100%;
+  right: -14px;
+}
+
+.item__download_details {
+  margin-top: 0.2em;
+  display: grid;
+  grid-template-columns: repeat(2, 125px);
+  gap: 1em;
+}
+
+.download__ios, .download__android {
+  border: 1px solid white;
+  border-radius: 6px;
+  color: #cdcdcd;
+}
+
+.block__mobile {
+  height: 510px;
+}
+
+@font-face {
+  font-family: "Futurabookc Regular";
+  src: url("/assets/fonts/FuturaBookCRegular.otf");
+}
+@font-face {
+  font-family: "Futurabookc Italic";
+  src: url("/assets/fonts/FuturaBookCItalic.otf");
+}
+@font-face {
+  font-family: "Futurademic Regular";
+  src: url("/assets/fonts/Futurademic.otf");
+}
+.b-page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */

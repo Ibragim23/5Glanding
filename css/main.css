@@ -1,0 +1,191 @@
+.b-page__head-line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ;
+  grid-template-rows: repeat(2);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background: url("/assets/images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 801px;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.b-head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30%)[2];
+  grid-template-columns: repeat(2, 30%);
+  -ms-grid-rows: (20%)[1];
+  grid-template-rows: repeat(1, 20%);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.b-head > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.b-head > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.b-head__media {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1em 10% 1em 10% 1em 10% 1em 10%;
+  grid-template-columns: repeat(5, 10%);
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  gap: 1em;
+}
+
+.b-head__icon {
+  background-image: url("/assets/icons/icon_rect.svg");
+}
+
+.b-head__button {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.button {
+  background: none;
+  border: solid white;
+  border-radius: 0.3em;
+  color: white;
+  padding: 0.3em 1.2em;
+  font-family: "Futurademic Regular";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.b-head__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 15%;
+  grid-template-columns: 35% 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-download {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ;
+  grid-template-rows: repeat(4);
+  width: 250px;
+  color: white;
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item__popup {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  height: 30px;
+}
+
+.popup__text {
+  font-family: "Futurabookc Regular";
+  font-size: 10px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 3.7em;
+  left: 0.6em;
+  z-index: 3333;
+}
+
+.popup__img {
+  width: 125px;
+}
+
+.item__download {
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Futurabookc Regular";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.download__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item__download:before,
+.item__download:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 0.2px;
+  background-color: white;
+  position: relative;
+}
+
+.item__download:before {
+  margin-left: -100%;
+  left: -14px;
+}
+
+.item__download:after {
+  margin-right: -100%;
+  right: -14px;
+}
+
+.item__download_details {
+  margin-top: 0.2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 125px 1em 125px;
+  grid-template-columns: repeat(2, 125px);
+  gap: 1em;
+}
+
+.download__ios, .download__android {
+  border: 1px solid white;
+  border-radius: 6px;
+  color: #cdcdcd;
+}
+
+.block__mobile {
+  height: 510px;
+}
+
+@font-face {
+  font-family: "Futurabookc Regular";
+  src: url("/assets/fonts/FuturaBookCRegular.otf");
+}
+@font-face {
+  font-family: "Futurabookc Italic";
+  src: url("/assets/fonts/FuturaBookCItalic.otf");
+}
+@font-face {
+  font-family: "Futurademic Regular";
+  src: url("/assets/fonts/Futurademic.otf");
+}
+.b-page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
