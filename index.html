@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./sass//main.css"> 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 </head>
 <body class="b-page">
         <div class="b-page__head-line">
@@ -37,7 +41,7 @@
                            <a href="#"> <img class="ios__img"   src="./assets/icons/download_ios.svg"/> </a>
                         </div>
                         <div class="download__android">
-                          <a hreg="#"> <img class="ios__img" src="./assets/icons/download_android.svg"/> </a>
+                          <a href="#"> <img class="ios__img" src="./assets/icons/download_android.svg"/> </a>
                         </div>
                         </div>
                     </div>
@@ -46,24 +50,130 @@
                     </div>
             </div>
         </div>
+        <div class="b-page__content">
+            <form class="content__scrolldown">
+                <button  type="button" class="scroll_button"> 
+                    вниз
+                    <img class="scroll_button__img" src="./assets/icons/arrow_down.svg"/>
+                    вниз
+                </button>
+                </form>
+            <div class="content__cards">
+                <div class="card">
+                    <img class="theBest__like_icon" src="./assets/icons/like.svg"/>
+                    <h2>Только лучшее</h2>
+                    <p>Всегда актуальные акции и скидки у вас в телефоне</p>
+                </div>
+                <div class="card">
+                    <img class="Nearby__geo_icon" src="./assets/icons/geo.svg"/>
+                    <h2>Всё рядом</h2>
+                    <p>Находите ближайшие акции на карте рядом с вами</p>
+                </div>
+                <div class="card">
+                    <img class="Notification__bell_icon" src="./assets/icons/bell.svg"/>
+                    <h2>Уведомления</h2>
+                    <p>Подписывайтесь только на то, что вас интересует и всегда будьте в курсе новых акций</p>
+                </div>
+                <div class="card">
+                    <img class="Cataloq_icon" src="./assets/icons/sheet.svg"/>
+                    <h2>Каталог</h2>
+                    <p>Огромный каталог с информацией о магазинах</p>
+                </div>
+            </div>
+        </div>
+        <div class="b-page__tabs">
+            <div class="tabs">
+              <nav class="tabs__items">
+                <a href="#tab_01" class="tabs__item">Избранное</a>
+                <img class="tabs__mobile_img" src="./assets/images/phone2_ref.png">
+                <a href="#tab_02" class="tabs__item">Профиль акции</a>
+                <a href="#tab_03" class="tabs__item">Подписки</a>
+                <a href="#tab_04" class="tabs__item">Карта</a>
+                <a href="#tab_05" class="tabs__item">Моя лента</a>
+              </nav>
+              <div class="tabs__body">
+                 <div id="tab_02" class="tabs__block">
+                    <p>
+                        Вы всегда получите полную информацию об акции:подробное описание, бренд, магазины и торговые центры, где проходит акция.
+                    </p>
+                    <p>
+                        Также доступна возможность перейти на сайт товара и купить в рамках действующей акции
+                    </p>
+                </div>
+                <div id="tab_01" class="tabs__block">
+                    dsrtrgggfdfgd
+                </div>
+                <div id="tab_03" class="tabs__block">
+                    dsdgfhjhjkhkjfhgfdd
+                </div>
+              </div>
+               
+            </div>    
+        </div>
+        <div class="b-page__actions">
 
+            <div class="actions__context">
+                <div class="action__context_txt">
+                    <h2 class="context_txt__title">Наши акции</h2>
+                    <p class="context_txt__description">Каждый день в Москве проходят распродажи.
+                    <br>В акциях и скидках дня могут участвовать любые группы товаров. Особенно популярны распродажи одежды и обуви, распродажи мебели, распродажи сумок.</p>
+                </div>
+                <div class="action__context_img">
+                    <img class="context_img_left" src="./assets/images/_phone3_1.png"/>
+                    <img class="context_img_right" src="./assets/images/_phone3_2.png"/>
+                </div>
+              
+            </div>
 
-
-
-        <div class="b-page__line">
+        </div>
+        <div class="b-page__swiper">
+          <div class="swiper__title">
+            <h2>Наши партнеры</h2>
+          </div>
+          <div class="swiper__tape">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img class="image_slider" src="./assets/images/logos/logo_carlo.png"/></div>
+                  <div class="swiper-slide"><img class="image_slider" src="./assets/images/logos/logo_adidas.png"/></div>
+                  <div class="swiper-slide"><img class="image_slider" src="./assets/images/logos/logo_cym.png"/></div>
+                  <div class="swiper-slide"><img class="image_slider" src="./assets/images/logos/logo_gum.png"/></div>
+                  <div class="swiper-slide"><img class="image_slider" src="./assets/images/logos/logo_nike.png"/></div>
+                  <div class="swiper-slide"><img class="image_slider" src="./assets/images/logos/logo_prada.png"/></div>
+                  <div class="swiper-slide"><img class="image_slider" src="./assets/images/logos/logo_zara.png"/></div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="b-page__partnership">
+            <div class="partnership__txt">
+                <p>Хотите стать партнером?</p>
+                <p>Напишите нам и про ваши акции узнают все.</p>
+            </div>
+            <form>
+                <button type="button" class="partnership__button">стать партнером</button>
+            </form>
+        </div>
+        <footer class="footer">
+           <div class="footer__info">
+            <div class="copyright">
+                <span>2016 © Shopguide</span>
+            </div>
+            <div class="condition">
+                <a href="#" class="politic">Политика конфидицинциальности</a>
+                <a href="#" class="rules">Правила использования</a>
+            </div>
             
-        </div>
-        <div class="b-page__line">
-            
-        </div>
-        <div class="b-page__line">
-            
-        </div>
-        <div class="b-page__line">
-          
-        </div>
-        <div class="b-page__footer">
-           
-        </div>
+           </div>
+           <div class="footer__contacts">
+                <button type="button" href="#" class="contact_btn">
+                    <img class="contact_img" src="./assets/icons/contact.svg"/>
+                    <span>Связаться с нами</span>
+                </button>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
